@@ -2,7 +2,6 @@
 require "../classes/Annonces.php";
 
 
-
 function displayAllGames(){
     $annoncesModel = new Annonces();
     $annonces = $annoncesModel->getAllGames();
@@ -49,3 +48,10 @@ function confirmDeleteAnnonce(){
     $deleteGameById = $annonceModel->confirmDeleteAnnonce();
     header("Location:http://localhost/Mailtrap/public/index.php?action=annonces");
 }
+
+function getAnnoncePDF(){
+    $annonceModel = new Annonces();
+    $myPDF = $annonceModel->generatePDF($_GET['id']);
+}
+
+

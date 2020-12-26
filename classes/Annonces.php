@@ -7,7 +7,7 @@ class Annonces
         $user = "root";
         $pass = "";
         try {
-            $db = new PDO("mysql:host=localhost;dbname=phpmvc;charset=utf8;", $user, $pass);
+            $db = new PDO("mysql:host=localhost;dbname=phpmvc;charset=utf8", $user, $pass);
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             echo "<h3 class='mt-5 container text-center alert-success p-2'>CONNEXION A PDO</h3>";
 
@@ -73,5 +73,56 @@ class Annonces
         $stmt->bindParam(1, $_GET['id']);
         $stmt->execute(array($_GET['id']));
         return $stmt;
+    }
+
+    function generatePDF($gameId){
+        ob_get_clean();
+        //Instance de la classe
+        require "../assets/FPDF/fpdf.php";
+        $db = $this->getPDO();
+        $query = "SELECT * FROM mixedgames WHERE id = ?";
+        $req = $db->prepare($query);
+        $req->execute(array($gameId));
+        $details_annonces = $req->fetch();
+
+        $title = $details_annonces['title'];
+        $description = $details_annonces['description'];
+        $price = $details_annonces['price'];
+        $image = $details_annonces['imgurl'];
+        $stock = $details_annonces['stock'];
+
+        if($stock === 0){
+            $stock =  "NON";
+        }else{
+            $stock =  "OUI";
+        }
+
+        $date = new DateTime($details_annonces['date_depot']);
+        ?>
+        <meta charset="UTF-8">
+        <?php
+        ob_get_clean();
+        $pdf = new FPDF();
+        //Sortie
+        $pdf->AddPage();
+        //Header
+        $pdf->Image('../assets/img/logo.png');
+
+        $pdf->SetFont('Arial','B',16);
+        $pdf->Cell(40,10,'Votre annonces');
+        $pdf->Ln(10);
+        $pdf->Cell(190,10,'Nom du jeux : '.$title);
+        $pdf->Ln(10);
+        $pdf->Image(''.$image, 10, 130, 70,100);
+        $pdf->Ln(10);
+        $pdf->SetFont('Arial','',12);
+        $pdf->MultiCell(190,10,'Description du jeux : '.utf8_decode($description), 1, 'L');
+        $pdf->Ln(10);
+        $pdf->Cell(190,10,'Prix du jeux : '.$price. ' EUROS');
+        $pdf->Ln(10);
+        $pdf->Cell(190,10,'Jeux en stock : '.$stock);
+        $pdf->Ln(10);
+        $pdf->Cell(190,10,'Date : '.$date->format("d-m-Y"));
+        $pdf->Output('','annonces.pdf',true);
     }
 }

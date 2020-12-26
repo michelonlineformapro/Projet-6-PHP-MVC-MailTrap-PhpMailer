@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf976fca-3153-4a91-879d-340d55b96aa3" name="Default Changelist" comment="" />
+    <list default="true" id="bf976fca-3153-4a91-879d-340d55b96aa3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/MixedGamesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/MixedGamesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/Annonces.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Annonces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/annonces.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/annonces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/details_annonces.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/details_annonces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/template.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +27,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
   </component>
@@ -28,11 +40,13 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1m6I9ERQlDInkMmbxF4jTsA9hbX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -52,7 +66,7 @@
       <updated>1608807460661</updated>
       <workItem from="1608807461802" duration="11401000" />
       <workItem from="1608887062961" duration="19851000" />
-      <workItem from="1608976907333" duration="7873000" />
+      <workItem from="1608976907333" duration="16446000" />
     </task>
     <servers />
   </component>

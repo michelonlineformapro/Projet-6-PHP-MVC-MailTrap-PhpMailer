@@ -1,5 +1,7 @@
+<meta charset="UTF-8">
 <?php
 require "../Controllers/MixedGamesController.php";
+
 //Appel du template
 ob_start();
 //Recup des url avec GET
@@ -56,6 +58,8 @@ if(isset($_GET['action'])) {
         }
     }elseif ($_GET['action'] === "confirmdelete"){
         confirmDeleteAnnonce();
+    }elseif ($_GET['action'] === "generate_pdf"){
+        getAnnoncePDF();
     }
 
 

@@ -3,10 +3,7 @@
     <div class="text-center">
         <a class="btn btn-outline-danger" href="index.php?action=ajouter_annonce">Ajouter une annonce</a>
     </div>
-</div>
 
-
-<div class="left-content">
     <h1 class="text-danger">Liste des jeux</h1>
     <div class="row">
                 <div class="col-9">
@@ -39,7 +36,7 @@
                                 ?>
                                 Posté le : <em><?= $date->format("d-m-Y") ?></em>
                             </p>
-                            <br>
+
                             <a class="btn btn-outline-success" href="index.php?action=details_annonce&id=<?= $datas['id'] ?>">Plus d'infos</a>
                         </div>
 
@@ -50,28 +47,47 @@
                         ?>
                     </div>
                 </div>
+
+
         <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img src="https://images-na.ssl-images-amazon.com/images/I/61NvkintSkL._AC_.jpg" class="img-thumbnail img-fluid card-img-top" alt="<?= $datas['title'] ?>" title="<?= $datas['title'] ?>">
+            <div class="card">
+                <img src="../assets/img/zelda.jpg" class="img-thumbnail img-fluid card-img-top" alt="<?= $datas['title'] ?>" title="<?= $datas['title'] ?>">
                 <div class="card-body">
                     <h5 class="card-title">
-                        Aladin MEGADRIVE
+                        ZELDA
                     </h5>
                     <p class="card-text">
                         <b>Description :</b>
                     <p>
-                        Aladdin est un jeu vidéo de plates-formes développé et édité par Virgin Interactive en 1993 sur Mega Drive. Des versions Amiga 1200, DOS, Game Boy et NES ont également vu le jour. Le jeu a été réalisé d'après le personnage du même nom de Walt Disney Pictures.
+                        Le jeux d'aventure de Nintendo
                     </p>
                     </p>
                     <p class="card-text">
-                        458.35 €
+                        <b>PRIX : </b>451.25 €
                     </p>
                     <a href="#" class="btn btn-outline-info">ACHETER</a>
                 </div>
             </div>
+            <br />
+            <div class="card">
+                <img src="../assets/img/dark.jpg" class="img-thumbnail img-fluid card-img-top" alt="<?= $datas['title'] ?>" title="<?= $datas['title'] ?>">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        DARK SOULS 3
+                    </h5>
+                    <p class="card-text">
+                        <b>Description :</b>
+                    <p>
+                        Le jeux de survie du studio from software
+                    </p>
+                    </p>
+                    <p class="card-text">
+                        <b>PRIX : </b>7845.25 €
+                    </p>
+                    <a href="#" class="btn btn-outline-info">ACHETER</a>
+                </div>
+            </div>
+
         </div>
-
-
-
     </div>
 </div>
