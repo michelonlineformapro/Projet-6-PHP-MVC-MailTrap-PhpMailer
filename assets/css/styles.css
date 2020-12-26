@@ -1,0 +1,42 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1D2326;
+}
+/*************************MENU************************/
+#menu{
+    background-color: #1D2326!important;
+    border-bottom: white 2px solid;
+
+}
+.navLINK{
+    color: white!important;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navLINK:hover{
+    color: orange!important;
+    font-weight: bold;
+    font-size: 24px;
+}
+.active{
+    color: orange!important;
+    font-weight: bold;
+    font-size: 24px;
+}
+/**************************PAGE ANNONCES*****************/
+.left-content{
+    background-color: #F0F1F2;
+    padding: 20px;
+    float: left;
+}
+hr, .line-separation{
+    height: 10px!important;
+    background-color: #232616!important;
+    width: 99%;
+}
