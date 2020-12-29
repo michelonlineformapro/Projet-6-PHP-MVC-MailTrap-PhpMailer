@@ -2,21 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf976fca-3153-4a91-879d-340d55b96aa3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/alex.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/pc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/rtype.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Mailtrap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Mailtrap.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/MixedGamesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/MixedGamesController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/Annonces.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/Annonces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/annonces.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/annonces.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/details_annonces.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/details_annonces.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/menu.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -67,6 +71,7 @@
       <workItem from="1608807461802" duration="11401000" />
       <workItem from="1608887062961" duration="19851000" />
       <workItem from="1608976907333" duration="16446000" />
+      <workItem from="1609227908439" duration="15574000" />
     </task>
     <servers />
   </component>

@@ -32,7 +32,7 @@
         </p>
         <br>
         <a class="btn btn-outline-success" href="">ACHETER</a>
-        <a class="btn btn-outline-info" href="index.php?action=annonces">Retour au annonces</a>
+        <a class="btn btn-outline-info" href="index.php?action=annonces_page">Retour au annonces</a>
         <a class="btn btn-outline-danger" target="_blank" href="index.php?action=generate_pdf&id=<?= $details_annonces['id'] ?>">FORMAT PDF</a>
     </div>
 </div>

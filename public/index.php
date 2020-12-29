@@ -4,13 +4,16 @@ require "../Controllers/MixedGamesController.php";
 
 //Appel du template
 ob_start();
+
+
+
 //Recup des url avec GET
 if(isset($_GET['action'])) {
     //Si annonces = page d'accueil
-    if ($_GET['action'] === "annonces") {
+    if ($_GET['action'] === "annonces_page") {
         $title = "ANNONCES ACCUEIL";
-        //Fonction depuis le controller
         displayAllGames();
+        //Fonction depuis le controller
         //Jeu par id
     } elseif ($_GET['action'] === "details_annonce") {
         if (isset($_GET['id']) && $_GET['id'] > 0) {

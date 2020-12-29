@@ -16,11 +16,30 @@ class Annonces
         }
         return $db;
     }
+    //Compter le nombre d'annonce
+    public function countAnnonce(){
+
+    }
+
+    //Afficher tous les annones
 
     public function getAllGames(){
+
         $db = $this->getPDO();
-        $query = "SELECT * FROM mixedgames";
-        $req = $db->query($query);
+        $query = "SELECT * FROM mixedgames LIMIT :premier, :parpage";
+        $req = $db->prepare($query);
+        $parPage = 5;
+        if(isset($_GET['page']) && $_GET['page'] > 0){
+            $currentPage = $_GET['page'];
+        }else{
+            $currentPage = 1;
+        }
+        $premier = ($currentPage * $parPage) - $parPage;
+
+        $req->bindValue(':premier', $premier, PDO::PARAM_INT);
+        $req->bindValue(':parpage', $parPage, PDO::PARAM_INT);
+        $req->execute();
+        $req->fetch(PDO::FETCH_ASSOC);
         return $req;
     }
 

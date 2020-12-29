@@ -1,6 +1,13 @@
 <?php
 require "../classes/Annonces.php";
 
+/*
+function getAnnoncesCount(){
+    $annonceModel = new Annonces();
+    $annonceCount = $annonceModel->countAnnonce();
+
+}
+*/
 
 function displayAllGames(){
     $annoncesModel = new Annonces();
